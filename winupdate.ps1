@@ -1,10 +1,21 @@
 ﻿Set-ExecutionPolicy RemoteSigned
-######################################################
-# Install apps using Chocolatey
-######################################################
-Write-Host "Installing Chocolatey"
-iex ((new-object net.webclient).DownloadString('http://bit.ly/psChocInstall'))
-Write-Host
+
+
+
+$ChkFile = "C:\ProgramData\chocolatey\choco.exe" 
+$FileExists = Test-Path $ChkFile 
+    If ($FileExists -eq $True) {
+        Write-Host "Choco already installed"
+    }
+    else {
+        ######################################################
+        # Install apps using Chocolatey
+        ######################################################
+        Write-Host "Installing Chocolatey"
+        iex ((new-object net.webclient).DownloadString('http://bit.ly/psChocInstall'))
+        Write-Host
+    }
+
 
 Write-Host "Installing applications from Chocolatey"
 cinst teamviewer8 -y

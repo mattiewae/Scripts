@@ -10,7 +10,6 @@ $FileExists = Test-Path $ChkFile
 If ($FileExists -eq $True) {
 Write-Host "File download success"
 Invoke-Expression C:\Users\Mathias\Downloads\winupdate.ps1
-
 }
 
 Remove-Item C:\Users\ENG\Downloads\winupdate.ps1
