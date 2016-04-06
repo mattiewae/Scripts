@@ -4,6 +4,8 @@ Set-Location -Path $home\Downloads
 
 iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
 
+cinst wget -y
+
 wget https://raw.githubusercontent.com/mattiewae/test/master/winupdate.ps1 -OutFile winupdate.ps1
 
 
