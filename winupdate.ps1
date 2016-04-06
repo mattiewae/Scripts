@@ -36,5 +36,5 @@ Write-Host
 cup all
 
 #Install windows updates - critical only
-Install-WindowsUpdate -acceptEula -SuppressReboots  -criteria BrowseOnly=0 and IsAssigned=1 and IsHidden=0 and IsInstalled=0 and Type='Software'
+Install-WindowsUpdate -acceptEula -SuppressReboots -criteria "BrowseOnly=0 and IsAssigned=1 and IsHidden=0 and IsInstalled=0 and Type='Software'"
 
