@@ -18,6 +18,7 @@ $FileExists = Test-Path $ChkFile
 
 Write-Host "Installing applications from Chocolatey"
 
+cinst wget -y
 cinst teamviewer8 -y
 cinst flashplayerplugin -y
 cinst googlechromex64 -y 
