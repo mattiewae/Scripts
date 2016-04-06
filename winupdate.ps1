@@ -1,5 +1,7 @@
 ﻿Set-ExecutionPolicy RemoteSigned
 
+
+
 $ChkFile = "C:\ProgramData\chocolatey\choco.exe" 
 $FileExists = Test-Path $ChkFile 
     If ($FileExists -eq $True) {
@@ -38,3 +40,16 @@ cup all
 #Install windows updates - critical only
 Install-WindowsUpdate -acceptEula -SuppressReboots -criteria "BrowseOnly=0 and IsAssigned=1 and IsHidden=0 and IsInstalled=0 and Type='Software'"
 
+
+#Update OT's
+Set-Location -Path $home\Downloads
+wget https://raw.githubusercontent.com/mattiewae/test/master/updateotsettings.ps1 -OutFile otupdate.ps1
+
+$ChkFileOT = "$home\Downloads\otupdate.ps1" 
+$FileExistsOT = Test-Path $ChkFileOT 
+If ($FileExistsOT -eq $True) {
+Write-Host "File download success"
+Invoke-Expression $home\Downloads\otupdate.ps1 | Out-Null
+}
+
+Remove-Item otupdate.ps1
