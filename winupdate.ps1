@@ -1,7 +1,5 @@
 ﻿Set-ExecutionPolicy RemoteSigned
 
-
-
 $ChkFile = "C:\ProgramData\chocolatey\choco.exe" 
 $FileExists = Test-Path $ChkFile 
     If ($FileExists -eq $True) {
@@ -18,6 +16,7 @@ $FileExists = Test-Path $ChkFile
 
 
 Write-Host "Installing applications from Chocolatey"
+
 cinst teamviewer8 -y
 cinst flashplayerplugin -y
 cinst googlechromex64 -y 
