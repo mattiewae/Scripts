@@ -36,6 +36,6 @@ Write-Host
 #update all apps
 cup all
 
-#Install windowd updates
+#Install windows updates - critical only
 Install-WindowsUpdate -acceptEula -SuppressReboots  -criteria IsHidden=0 and IsInstalled=0 and Type='Software'
 
