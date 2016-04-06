@@ -13,8 +13,3 @@ Invoke-Expression $home\Downloads\winupdate.ps1 | Out-Null
 
 Write-Host "Update file removed"
 Remove-Item $home\Downloads\winupdate.ps1
-
-
-
-
-
