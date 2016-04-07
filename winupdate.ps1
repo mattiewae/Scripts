@@ -44,7 +44,7 @@ Install-WindowsUpdate -acceptEula -SuppressReboots -criteria "BrowseOnly=0 and I
 
 #Update OT's
 Set-Location -Path $home\Downloads
-wget https://raw.githubusercontent.com/mattiewae/test/master/updateotsettings.ps1 -OutFile otupdate.ps1
+wget https://raw.githubusercontent.com/mattiewae/test/master/otupdate.ps1 -OutFile otupdate.ps1
 
 $ChkFileOT = "$home\Downloads\otupdate.ps1" 
 $FileExistsOT = Test-Path $ChkFileOT 
