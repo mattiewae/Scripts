@@ -32,6 +32,7 @@ cinst windirstat -y
 cinst quicktime -y 
 cinst irfanview -y
 cinst boxstarter -y
+cinst powershell -pre -y
 
 Write-Host
 
