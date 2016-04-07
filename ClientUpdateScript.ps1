@@ -1,5 +1,20 @@
 ﻿Set-ExecutionPolicy RemoteSigned
 
+if ($PSVersionTable.PSVersion.Major -eq 5){
+    Write-Host "PS Version 5.0"
+}
+else {
+    ######################################################
+    # Install PS V5.0
+    # Reboot and run script again.
+    ######################################################
+    Write-Host "Installing Chocolatey"
+    iex ((new-object net.webclient).DownloadString('http://bit.ly/psChocInstall'))
+    Write-Host
+    cinst powershell -pre -y
+    cinst upgrade powershell -pre -y
+    }
+
 Set-Location -Path $home\Downloads
 
 iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/mattiewae/test/master/winupdate.ps1'))
