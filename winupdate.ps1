@@ -54,4 +54,3 @@ Write-Host "File download success"
 Invoke-Expression $home\Downloads\otupdate.ps1 | Out-Null
 }
 
-Remove-Item otupdate.ps1

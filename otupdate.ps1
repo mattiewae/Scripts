@@ -3,9 +3,9 @@
 Set-Location -Path $home\Downloads
 wget https://github.com/mattiewae/test/raw/master/ot.zip -OutFile .\test.zip
 
-Write-Host "Download succes"
+Write-Host "Download OT's succes"
 Expand-Archive -Path test.zip -DestinationPath OT -Force
-Write-Host "Unzip succes"
+Write-Host "OT's unzipped"
 
 
 $OTcheck = "$home\Desktop\*.stp"
@@ -14,7 +14,7 @@ $SDnew = "$home\Downloads\OT\Setting_SD_11feb2016.stp"
 $HDnew = "$home\Downloads\OT\Setting_HD_11feb2016.stp"
 
 $OTchecker = Test-Path $OTcheck
-Write-Host $OTchecker
+#Write-Host $OTchecker
 
 if ($OTchecker -eq $true){
     $STPrem    
