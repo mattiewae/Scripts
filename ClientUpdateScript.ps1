@@ -29,4 +29,5 @@ else{
     cinst boxstarter -y
     cinst powershell -pre -y
     cinst upgrade powershell -pre -y
+    Restart-Computer
 }
