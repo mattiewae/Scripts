@@ -4,7 +4,6 @@
 if ($PSVersionTable.PSVersion.Major -eq 5){
     
     Set-Location -Path $home\Downloads
-
     iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/mattiewae/test/master/winupdate.ps1'))
 }
 else{
