@@ -43,10 +43,10 @@ Set-Location -Path $home\Downloads
 iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/mattiewae/test/master/otupdate.ps1'))
 
 
-$ChkFileOT = "$home\Downloads\otupdate.ps1" 
-$FileExistsOT = Test-Path $ChkFileOT 
-If ($FileExistsOT -eq $True) {
-Write-Host "File download success"
-Invoke-Expression $home\Downloads\otupdate.ps1 | Out-Null
-}
+#$ChkFileOT = "$home\Downloads\otupdate.ps1" 
+#$FileExistsOT = Test-Path $ChkFileOT 
+#If ($FileExistsOT -eq $True) {
+#Write-Host "File download success"
+#Invoke-Expression $home\Downloads\otupdate.ps1 | Out-Null
+#}
 
