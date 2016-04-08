@@ -1,6 +1,5 @@
 ﻿Set-ExecutionPolicy RemoteSigned
 
-
 if ($PSVersionTable.PSVersion.Major -eq 5){
     
     Set-Location -Path $home\Downloads
