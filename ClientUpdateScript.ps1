@@ -15,8 +15,8 @@ if ($PSVersionTable.PSVersion.Major -eq 5){
     Invoke-Expression $home\Downloads\winupdate.ps1 | Out-Null
     }
     
-    Remove-Item $home\Downloads\winupdate.ps1
-    Write-Host "Update file removed"
+    #Remove-Item $home\Downloads\winupdate.ps1
+    #Write-Host "Update file removed"
 }
 else{
     ######################################################
