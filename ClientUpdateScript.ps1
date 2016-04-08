@@ -13,8 +13,13 @@ if ($PSVersionTable.PSVersion.Major -eq 5){
     #If ($FileExists -eq $True) {
     #Write-Host "File download success"
     #Invoke-Expression $home\Downloads\winupdate.ps1 | Out-Null
+<<<<<<< HEAD
     #}
     #
+=======
+    }
+    
+>>>>>>> origin/master
     #Remove-Item $home\Downloads\winupdate.ps1
     #Write-Host "Update file removed"
 }
@@ -26,7 +31,12 @@ else{
     Write-Host "Installing Chocolatey"
     iex ((new-object net.webclient).DownloadString('http://bit.ly/psChocInstall'))
     Write-Host
+<<<<<<< HEAD
     choco install dotnet4.6 -y
+=======
+    choco install dotnet4.6 -y -force
+    #choco upgrade dotnet4.6 -y 
+>>>>>>> origin/master
     cinst boxstarter -y
     cinst powershell -pre -y
     cinst upgrade powershell -pre -y
