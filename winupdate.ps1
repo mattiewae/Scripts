@@ -39,14 +39,4 @@ Install-WindowsUpdate -acceptEula -SuppressReboots -criteria "BrowseOnly=0 and I
 
 Write-Host "Update OT's"
 Set-Location -Path $home\Downloads
-#wget https://raw.githubusercontent.com/mattiewae/test/master/otupdate.ps1 -OutFile otupdate.ps1
 iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/mattiewae/test/master/otupdate.ps1'))
-
-
-#$ChkFileOT = "$home\Downloads\otupdate.ps1" 
-#$FileExistsOT = Test-Path $ChkFileOT 
-#If ($FileExistsOT -eq $True) {
-#Write-Host "File download success"
-#Invoke-Expression $home\Downloads\otupdate.ps1 | Out-Null
-#}
-
