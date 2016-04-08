@@ -29,7 +29,7 @@ cinst adobeair -y
 cinst windirstat -y
 cinst quicktime -y 
 cinst irfanview -y
-cinst boxstarter -y
+
 
 
 Write-Host

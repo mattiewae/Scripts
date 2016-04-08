@@ -26,6 +26,7 @@ else{
     Write-Host "Installing Chocolatey"
     iex ((new-object net.webclient).DownloadString('http://bit.ly/psChocInstall'))
     Write-Host
+    cinst boxstarter -y
     cinst powershell -pre -y
     cinst upgrade powershell -pre -y
 }
