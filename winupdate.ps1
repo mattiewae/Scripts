@@ -40,3 +40,5 @@ Install-WindowsUpdate -acceptEula -SuppressReboots -criteria "BrowseOnly=0 and I
 Write-Host "Update OT's"
 Set-Location -Path $home\Downloads
 iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/mattiewae/test/master/otupdate.ps1'))
+
+Restart-Computer
