@@ -1,5 +1,6 @@
 ﻿Set-ExecutionPolicy RemoteSigned
 
+
 $ChkFile = "C:\ProgramData\chocolatey\choco.exe" 
 $FileExists = Test-Path $ChkFile 
     If ($FileExists -eq $True) {
@@ -13,11 +14,6 @@ $FileExists = Test-Path $ChkFile
         iex ((new-object net.webclient).DownloadString('http://bit.ly/psChocInstall'))
         Write-Host
     }
-
-
-
-Write-Host "update all apps"
-cup all -y
 
 Write-Host "Installing applications from Chocolatey"
 
@@ -34,6 +30,10 @@ cinst adobeair -y
 cinst windirstat -y
 cinst quicktime -y 
 cinst irfanview -y
+
+
+Write-Host "update all apps"
+cup all -y
 
 Write-Host "Update OT's"
 iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/mattiewae/test/master/otupdate.ps1'))
