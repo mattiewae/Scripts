@@ -38,7 +38,7 @@ cup all -y
 Write-Host "Update OT's"
 iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/mattiewae/test/master/otupdate.ps1'))
 
-Write-Host "Update OT's"
+Write-Host "Update nuttige dingen"
 iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/mattiewae/test/master/nuttigedingen.ps1'))
 
 Write-Host "Install windows updates - critical only"
