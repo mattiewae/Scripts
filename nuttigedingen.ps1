@@ -7,10 +7,10 @@ Write-Host "Download allerlei nuttige dingen succes"
 Expand-Archive -Path nuttige.zip -DestinationPath ND -Force
 Write-Host "files unzipped"
 
-Copy-Item '.\ND\Allerlei nuttige dingen'  "$home\Desktop\" -Force
+Copy-Item '.\ND\Allerlei nuttige dingen'  "$home\Desktop\" -Force -Recurse
 
 
-#Remove-Item $home\Downloads\ND -Recurse
-#Write-Host "Remove ND"
-#Remove-Item $home\Downloads\nuttige.zip 
-#Write-Host "Remove ZIP"
+Remove-Item $home\Downloads\ND -Recurse
+Write-Host "Remove ND"
+Remove-Item $home\Downloads\nuttige.zip 
+Write-Host "Remove ZIP"
