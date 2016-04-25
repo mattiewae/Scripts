@@ -21,6 +21,7 @@ cinst googlechromex64 -y
 cinst firefox -y 
 cinst notepadplusplus.install -y
 cinst jre8 -y 
+cinst jdk8 -y
 cinst vlc -y
 cinst ccleaner -y
 cinst adobeair -y
