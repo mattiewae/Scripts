@@ -17,7 +17,7 @@ Write-Host "Installing applications from Chocolatey"
 cinst wget -y
 cinst teamviewer8 -y
 cinst flashplayerplugin -y
-cinst googlechromex64 -y 
+cinst googlechrome -y 
 cinst firefox -y 
 cinst notepadplusplus.install -y
 cinst jre8 -y 
