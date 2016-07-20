@@ -28,6 +28,7 @@ cinst adobeair -y
 cinst windirstat -y
 cinst quicktime -y 
 cinst irfanview -y
+cinst clover -y
 
 Write-Host "update all apps"
 cup all -y
