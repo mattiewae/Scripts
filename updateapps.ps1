@@ -29,6 +29,9 @@ cinst windirstat -y
 cinst quicktime -y 
 cinst irfanview -y
 cinst clover -y
+cinst libreoffice -y
+cinst winff -y
+cinst mediainfo -y
 
 Write-Host "update all apps"
 cup all -y
