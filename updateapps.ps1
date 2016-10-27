@@ -33,6 +33,7 @@ cinst mediainfo -y
 cinst teamviewer11 -y
 cinst 7zip -y
 cinst dotnet4.6 -y
+cinst win-youtube-dl -y
 
 Write-Host "update all apps"
 cup all -y
