@@ -12,25 +12,27 @@
 #        Write-Host
 #    }
 #
-#Write-Host "Installing applications from Chocolatey"
-#
-#cinst wget -y
-#cinst teamviewer8 -y
-#cinst flashplayerplugin -y
-#cinst googlechrome -y 
-#cinst firefox -y 
-#cinst notepadplusplus.install -y
-#cinst jre8 -y 
-#cinst jdk8 -y
-#cinst vlc -y
-#cinst ccleaner -y
-#cinst adobeair -y
-#cinst windirstat -y
-#cinst quicktime -y 
-#cinst irfanview -y
-#cinst libreoffice -y
-#cinst winff -y
-#cinst mediainfo -y
+Write-Host "Installing applications from Chocolatey"
+
+cinst wget -y
+cinst flashplayerplugin -y
+cinst googlechrome -y 
+cinst firefox -y 
+cinst notepadplusplus.install -y
+cinst jre8 -y 
+cinst jdk8 -y
+cinst vlc -y
+cinst ccleaner -y
+cinst adobeair -y
+cinst windirstat -y
+cinst quicktime -y 
+cinst irfanview -y
+cinst libreoffice -y
+cinst winff -y
+cinst mediainfo -y
+cinst teamviewer11 -y
+cinst 7zip -y
+cinst dotnet4.6 -y
 
 Write-Host "update all apps"
 cup all -y
