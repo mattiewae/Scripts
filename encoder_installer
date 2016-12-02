@@ -1,5 +1,6 @@
 Set-ExecutionPolicy RemoteSigned
 
+# TODO: check if choco is installed
 Write-Host "Installing Chocolatey"
     iex ((new-object net.webclient).DownloadString('http://bit.ly/psChocInstall'))
     
