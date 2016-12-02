@@ -1,0 +1,10 @@
+Set-ExecutionPolicy RemoteSigned
+
+Write-Host "Installing Chocolatey"
+    iex ((new-object net.webclient).DownloadString('http://bit.ly/psChocInstall'))
+    
+choco install ffmpeg -y
+# TODO: copy ffmpeg > C:\Tools\ffmpeg.exe
+
+Set-Location -Path $home\Downloads
+    iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/mattiewae/test/master/Testen%20ffmpegV6.ps1'))
