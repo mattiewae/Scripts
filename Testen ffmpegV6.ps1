@@ -1,7 +1,11 @@
-﻿# -------------------------------------------------------------
+# -------------------------------------------------------------
+# Run powershell ISE as Admininstrator
 # Uncomment 'Set-ExecutionPolicy RemoteSigned' en voer uit (F5) 
 # -------------------------------------------------------------
 Set-ExecutionPolicy Unrestricted
+
+#TODO - SendTo FTP
+# https://gallery.technet.microsoft.com/scriptcenter/80647f66-139c-40a4-bb7a-04a2d73d423c
 
 # Check of E-schijf bestaat, indien niet, maak folder aan op C-schijf.
 # Premiere project wordt altijd ge-exporteerd naar C:\Temp, daar worden alle bewerkingen gedaan. 
@@ -12,6 +16,7 @@ $Temp = 'C:\Temp'
 $location = 'E:\AdobeExport' 
 $checkLocation = Test-Path $location
 $mp4box = "C:\Program Files\GPAC\mp4box.exe"
+# TODO - FFmpeg.exe kopieren naar bv: C:\Tools\
 $ffmpeg = "C:\ProgramData\chocolatey\lib\ffmpeg\tools\ffmpeg-3.2-win64-static\bin\ffmpeg.exe"
 
 if($checkLocation -eq 'true'){
