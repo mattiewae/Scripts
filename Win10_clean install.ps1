@@ -39,8 +39,7 @@ cinst googledrive -y
 cinst irfanview -y
 cinst avgantivirusfree -y
 cinst clover -y
-
-
+cinst jdownloader -y
 
 
 
