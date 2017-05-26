@@ -30,7 +30,7 @@ cinst irfanview -y
 cinst libreoffice -y
 cinst winff -y
 cinst mediainfo -y
-cinst teamviewer11 -y
+cinst teamviewer -y
 cinst 7zip -y
 cinst dotnet4.6 -y
 cinst win-youtube-dl -y
